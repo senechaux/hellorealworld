@@ -17,6 +17,7 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
             'Symfony\\Flex\\' => 13,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Routing\\' => 26,
+            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Finder\\' => 25,
@@ -28,6 +29,7 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\Cache\\' => 24,
+            'Symfony\\Bundle\\WebServerBundle\\' => 31,
             'Symfony\\Bundle\\FrameworkBundle\\' => 31,
         ),
         'P' => 
@@ -60,6 +62,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         'Symfony\\Component\\Routing\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/routing',
+        ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
         ),
         'Symfony\\Component\\HttpKernel\\' => 
         array (
@@ -104,6 +110,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         'Symfony\\Component\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/cache',
+        ),
+        'Symfony\\Bundle\\WebServerBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/web-server-bundle',
         ),
         'Symfony\\Bundle\\FrameworkBundle\\' => 
         array (
