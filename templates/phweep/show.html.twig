@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Phweep{% endblock %}
+
+{% block body %}
+    <h1>Phweep</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ phweep.id }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ phweep.message }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('phweep_index') }}">back to list</a>
+
+    <a href="{{ path('phweep_edit', {'id': phweep.id}) }}">edit</a>
+
+    {{ include('phweep/_delete_form.html.twig') }}
+{% endblock %}
