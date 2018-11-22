@@ -72,6 +72,14 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
         ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
+        'L' => 
+        array (
+            'Liip\\ImagineBundle\\' => 19,
+        ),
         'F' => 
         array (
             'Faker\\' => 6,
@@ -280,6 +288,14 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         array (
             0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
         ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Liip\\ImagineBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/liip/imagine-bundle',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -369,6 +385,13 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
             'Metadata\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jms/metadata/src',
+            ),
+        ),
+        'I' => 
+        array (
+            'Imagine' => 
+            array (
+                0 => __DIR__ . '/..' . '/imagine/imagine/lib',
             ),
         ),
         'D' => 

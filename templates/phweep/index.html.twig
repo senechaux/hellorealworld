@@ -9,7 +9,7 @@
         {% for phweep in phweeps %}
         <div class="card bg-primary text-white text-center">
             {% if phweep.image %}
-                <img class="card-img-top" src="{{ vich_uploader_asset(phweep, 'imageFile') }}">
+                <img class="card-img-top" src="{{ vich_uploader_asset(phweep, 'imageFile') | imagine_filter('squared_thumbnail') }}">
             {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ phweep.id }}</h5>
