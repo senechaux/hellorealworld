@@ -6,6 +6,7 @@ use App\Entity\Phweep;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class PhweepType extends AbstractType
 {
@@ -13,6 +14,7 @@ class PhweepType extends AbstractType
     {
         $builder
             ->add('message')
+            ->add('imageFile', VichImageType::class)
         ;
     }
 

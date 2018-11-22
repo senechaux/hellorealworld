@@ -20,7 +20,7 @@ class PhweepController extends AbstractController
      */
     public function index(PhweepRepository $phweepRepository): Response
     {
-        return $this->render('phweep/index.html.twig', ['phweeps' => $phweepRepository->findAll()]);
+        return $this->render('phweep/index.html.twig', ['phweeps' => $phweepRepository->findBy([], ['id' => 'DESC'])]);
     }
 
     /**

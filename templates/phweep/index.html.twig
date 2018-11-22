@@ -8,6 +8,9 @@
     <div class="card-columns">
         {% for phweep in phweeps %}
         <div class="card bg-primary text-white text-center">
+            {% if phweep.image %}
+                <img class="card-img-top" src="{{ vich_uploader_asset(phweep, 'imageFile') }}">
+            {% endif %}
             <div class="card-body">
                 <h5 class="card-title">{{ phweep.id }}</h5>
                 <p class="card-text">{{ phweep.message }}</p>
