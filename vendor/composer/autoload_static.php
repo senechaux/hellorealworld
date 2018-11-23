@@ -96,6 +96,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         array (
             'Liip\\ImagineBundle\\' => 19,
         ),
+        'G' => 
+        array (
+            'GraphQL\\' => 8,
+        ),
         'F' => 
         array (
             'Faker\\' => 6,
@@ -342,6 +346,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         'Liip\\ImagineBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/liip/imagine-bundle',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
         ),
         'Faker\\' => 
         array (
