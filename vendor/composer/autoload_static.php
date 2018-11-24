@@ -92,6 +92,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
         ),
+        'O' => 
+        array (
+            'Oneup\\FlysystemBundle\\' => 22,
+        ),
         'N' => 
         array (
             'Nyholm\\Psr7\\' => 12,
@@ -105,6 +109,7 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         'L' => 
         array (
             'Liip\\ImagineBundle\\' => 19,
+            'League\\Flysystem\\' => 17,
         ),
         'H' => 
         array (
@@ -380,6 +385,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         array (
             0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
         ),
+        'Oneup\\FlysystemBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/oneup/flysystem-bundle',
+        ),
         'Nyholm\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/nyholm/psr7/src',
@@ -399,6 +408,10 @@ class ComposerStaticInit8765cb6e49381c2317d98ffb922ffbf8
         'Liip\\ImagineBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/liip/imagine-bundle',
+        ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
         'Http\\Promise\\' => 
         array (

@@ -1,0 +1,11 @@
+# Read the documentation: https://github.com/1up-lab/OneupFlysystemBundle/tree/master/Resources/doc/index.md
+oneup_flysystem:
+    adapters:
+        default_adapter:
+            local:
+                directory: '%kernel.project_dir%/public/images/phweeps_fs'
+    filesystems:
+        phweep_image_fs:
+            adapter: default_adapter
+            #alias: League\Flysystem\Filesystem
+            mount: phweep_image_fs

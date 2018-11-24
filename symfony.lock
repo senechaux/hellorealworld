@@ -131,6 +131,9 @@
             "ref": "89a8c10882c422723d1c7f80a41f7008b17f608c"
         }
     },
+    "league/flysystem": {
+        "version": "1.0.49"
+    },
     "liip/imagine-bundle": {
         "version": "1.8",
         "recipe": {
@@ -169,6 +172,15 @@
     },
     "ocramius/proxy-manager": {
         "version": "2.1.1"
+    },
+    "oneup/flysystem-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0eb87bba411c227da027fe5f7c1dc7954b02f242"
+        }
     },
     "php-http/client-common": {
         "version": "1.8.1"

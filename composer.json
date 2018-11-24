@@ -10,6 +10,7 @@
         "kriswallsmith/buzz": "^0.17.2",
         "liip/imagine-bundle": "^2.1",
         "monolog/monolog": "^1.24",
+        "oneup/flysystem-bundle": "^3.0",
         "php-http/guzzle6-adapter": "1.1.1",
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/console": "4.1.*",

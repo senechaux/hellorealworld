@@ -1,8 +1,9 @@
 vich_uploader:
     db_driver: orm
+    storage: flysystem
 
     mappings:
         phweep_image:
-            uri_prefix: '/images/phweeps'
-            upload_destination: '%kernel.project_dir%/public/images/phweeps'
+            uri_prefix: '/images/phweeps_fs'
+            upload_destination: 'phweep_image_fs'
             namer: 'Vich\UploaderBundle\Naming\OrignameNamer'
