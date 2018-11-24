@@ -1,0 +1,37 @@
+fos_http_cache:
+    cache_control:
+        defaults:
+            overwrite: true
+        rules:
+            -
+                match:
+                    path: ^/$
+                headers:
+                    cache_control: 
+                        public: true
+                        max_age: 64000
+                        s_maxage: 64000
+                    etag: "strong"
+                    vary: [Accept-Encoding, Accept-Language]
+
+            # match everything to set defaults
+            -
+                match:
+                    path: ^/.+
+                headers:
+                    overwrite: false
+                    cache_control: 
+                        public: true
+                        max_age: 15
+                        s_maxage: 30
+                    etag: "strong"
+    proxy_client:
+        symfony:
+            tags_header: My-Cache-Tags
+            tags_method: TAGPURGE
+            header_length: 1234
+            purge_method: PURGE
+            # for single server installations:
+            use_kernel_dispatcher: true
+    debug:
+        enabled: true

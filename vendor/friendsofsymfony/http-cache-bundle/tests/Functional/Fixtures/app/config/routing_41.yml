@@ -1,0 +1,56 @@
+tag_list:
+  path:  /tag/list
+  methods:  [GET]
+  controller: tag_controller::listAction
+
+tag_error:
+  path:  /tag/error
+  controller: tag_controller::errorAction
+
+tag_one:
+  path:  /tag/{id}
+  methods:  [GET,POST]
+  controller: tag_controller::itemAction
+
+tag_manual:
+  path: /tag_manual
+  controller: tag_controller::manualAction
+
+tag_twig:
+  path: /tag_twig
+  controller: tag_controller::twigAction
+
+invalidation_route:
+  path: /invalidate/route/{id}
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\InvalidationController::itemAction
+
+invalidation_path:
+  path: /invalidate/path/{statusCode}
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\InvalidationController::otherAction
+
+invalidation_error:
+  path: /invalidate/error
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\InvalidationController::errorAction
+
+test_cached:
+  path:  /cached/{id}
+  methods:  [GET,PUT]
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\TestController::contentAction
+
+test_cached_session:
+  path:  /secured_area/cached_session
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\TestController::sessionAction
+
+test_noncached:
+  path:  /noncached
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\TestController::contentAction
+
+test_logout:
+  path:  /secured_area/logout
+
+test_flash:
+  path: /flash
+  controller: FOS\HttpCacheBundle\Tests\Functional\Fixtures\Controller\FlashMessageController::flashAction
+
+user_context_hash:
+    path: /secured_area/_fos_user_context_hash
